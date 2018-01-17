@@ -1,0 +1,57 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/budget_row"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/transaction_list_item_left_padding"
+    android:paddingRight="@dimen/transaction_list_item_right_padding"
+    android:paddingBottom="@dimen/transaction_list_item_bottom_padding"
+    android:paddingTop="@dimen/transaction_list_item_top_padding"
+    android:minHeight="?android:listPreferredItemHeight"
+    android:gravity="center_vertical">
+
+    <TextView android:id="@+id/search_transaction_budget_name"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextLight"
+        android:text="@string/placeholder"
+        />
+    <TextView android:id="@+id/search_transaction_category_name"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextLight"
+        android:text="@string/placeholder"
+        />
+    <TextView android:id="@+id/search_transaction_list_name"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextLight"
+        android:text="@string/placeholder"
+        />
+    <TextView android:id="@+id/search_transaction_list_amount"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextLight"
+        android:text="@string/placeholder"
+        />
+    <TextView android:id="@+id/search_transaction_list_date"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextLight"
+        android:text="@string/placeholder"
+        />
+    <TextView android:id="@+id/search_transaction_list_memo"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorTextLight"
+        android:text="@string/placeholder"
+        />
+
+</LinearLayout>

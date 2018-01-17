@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="questions">
+        <item >Mother\'s maiden name?</item>
+        <item>Favorite teacher?</item>
+        <item>Your middle school?</item>
+    </string-array>
+    <string-array name="frequencyChoices">
+        <item>Day</item>
+        <item>Week</item>
+    </string-array>
+</resources>

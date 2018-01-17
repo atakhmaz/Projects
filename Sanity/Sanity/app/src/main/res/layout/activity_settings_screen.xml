@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary" >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="0dp"
+            android:layout_marginBottom="0dp"
+            android:paddingTop="@dimen/row_padding_size"
+            >
+
+            <TextView
+                android:id="@+id/settings_screen_category_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/row_padding_size"
+                android:paddingRight="@dimen/row_padding_size"
+                android:textSize="@dimen/settings_screen_text_size"
+                android:text="@string/settings_screen_budget_name_label"
+                android:textColor="@color/colorTextLight"/>
+
+            <TextView
+                android:id="@+id/settings_screen_budget_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_screen_category_label"
+                android:paddingLeft="@dimen/row_padding_size"
+                android:paddingRight="@dimen/row_padding_size"
+                android:textSize="20sp"
+                android:textColor="@color/colorTextLight"
+                android:text="@string/placeholder"
+                />
+
+            <TextView
+                android:id="@+id/settings_screen_start_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_screen_budget_name"
+                android:paddingLeft="@dimen/row_padding_size"
+                android:paddingRight="@dimen/row_padding_size"
+                android:textSize="@dimen/settings_screen_text_size"
+                android:text="@string/settings_screen_start_date_label"
+                android:textColor="@color/colorTextLight"/>
+
+            <DatePicker
+                android:id="@+id/settings_screen_budget_start_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/date_picker_height"
+                android:layout_below="@+id/settings_screen_start_date_label"
+                android:paddingLeft="@dimen/row_padding_size"
+                android:paddingRight="@dimen/row_padding_size"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true"
+                >
+            </DatePicker>
+
+            <TextView
+                android:id="@+id/settings_screen_end_date_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_screen_budget_start_date"
+                android:paddingLeft="@dimen/row_padding_size"
+                android:paddingRight="@dimen/row_padding_size"
+                android:textSize="@dimen/settings_screen_text_size"
+                android:text="@string/settings_screen_end_date_label"
+                android:textColor="@color/colorTextLight"/>
+
+            <DatePicker
+                android:id="@+id/settings_screen_budget_end_date"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/date_picker_height"
+                android:layout_below="@+id/settings_screen_end_date_label"
+                android:paddingLeft="@dimen/row_padding_size"
+                android:paddingRight="@dimen/row_padding_size"
+                android:calendarViewShown="false"
+                android:datePickerMode="spinner"
+                android:spinnersShown="true"
+                >
+            </DatePicker>
+
+            <TextView
+                android:id="@+id/settings_screen_threshold_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_screen_budget_end_date"
+                android:paddingLeft="@dimen/row_padding_size"
+                android:paddingRight="@dimen/row_padding_size"
+                android:textSize="@dimen/settings_screen_text_size"
+                android:text="@string/settings_screen_threshold_label"
+                android:textColor="@color/colorTextLight"/>
+
+            <LinearLayout
+                android:id="@+id/settings_screen_threshold_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_screen_threshold_label"
+                android:paddingLeft="@dimen/row_padding_size"
+                android:paddingRight="@dimen/row_padding_size"
+                android:orientation= "horizontal">
+
+                <TextView
+                    android:id="@+id/settings_screen_threshold_progress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:gravity="center"
+                    android:layout_marginEnd="@dimen/settings_screen_seek_bar_left_margin"
+                    android:text="75%"
+                    android:textColor="@color/colorTextLight"/>
+
+                <SeekBar
+                    android:id="@+id/settings_screen_threshold_seekbar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/button_height"
+                    android:max="99"
+                    android:layout_weight="50"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/settings_screen_notify_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_screen_threshold_layout"
+                android:paddingLeft="@dimen/row_padding_size"
+                android:paddingRight="@dimen/row_padding_size"
+                android:textSize="@dimen/settings_screen_text_size"
+                android:text="@string/settings_screen_notification_label"
+                android:textColor="@color/colorTextLight"/>
+
+            <RelativeLayout
+                android:id="@+id/settings_screen_notify_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_screen_notify_label"
+                android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:id="@+id/til_frequency_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColorHint="@color/colorTextLight">
+
+                    <EditText
+                        android:id="@+id/frequency_number"
+                        android:layout_width="@dimen/settings_screen_frequency_input_width"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/colorTextLight"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="40dp"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="@string/input_length_shorter"
+                        android:textColor="@color/colorTextLight" />
+
+
+                </android.support.design.widget.TextInputLayout>
+
+                <RadioGroup
+                    android:id="@+id/radio_group_set_freq"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_alignParentRight="true"
+                   android:paddingRight="40dp"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="96dp"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/radio_set_day"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:buttonTint="@color/colorTextLight"
+                        android:checked="true"
+                        android:text="@string/label_day"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginEnd="16dp"/>
+
+                    <RadioButton
+                        android:id="@+id/radio_set_week"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:buttonTint="@color/colorTextLight"
+                        android:text="@string/label_week"
+                        android:textColor="@color/colorTextLight" />
+                </RadioGroup>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:id="@+id/settings_screen_limit_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_screen_notify_layout"
+                android:text="@string/settings_screen_limit_label"
+                android:paddingLeft="@dimen/row_padding_size"
+                android:paddingRight="@dimen/row_padding_size"
+                android:textColor="@color/colorTextLight"/>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/til_settings_screen_budget_limit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/settings_screen_limit_label"
+                android:paddingTop="0dp"
+                android:layout_marginTop="0dp"
+                android:textColorHint="@color/colorTextLight">
+                <EditText
+                    android:id="@+id/settings_screen_budget_limit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/row_padding_size"
+                    android:paddingLeft="@dimen/row_padding_size"
+                    android:paddingRight="@dimen/row_padding_size"
+                    android:maxLength="@string/input_length"
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/colorTextLight"
+                    android:backgroundTint="@color/colorTextLight"
+                    />
+            </android.support.design.widget.TextInputLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/settings_screen_confirm_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="0dp"
+        android:padding="12dp"
+        android:text="@string/settings_screen_confirm_button_label"
+        android:textColor="@color/colorTextLight"
+        android:background="@color/colorPrimaryDark"
+        />
+</LinearLayout>

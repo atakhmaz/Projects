@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Primary color of the app: the background color -->
+    <color name="colorPrimary">#263238</color>
+    <!-- Lighter color of the app: used for popup window and such -->
+    <color name="colorPrimaryLight">#4f5b62</color>
+    <!-- Darker color of the app: used for buttons and such -->
+    <color name="colorPrimaryDark">#000a12</color>
+    <!-- Highlight color of the app: used fro highlighting selections -->
+    <color name="colorAccent">#c62828</color>
+    <!-- Text colors -->
+    <color name="colorTextLight">#26a69a</color>
+    <color name="colorTextGrey">#4f5b62</color>
+    <color name="colorTextBlack">#000000</color>
+    <color name="colorTextDelete">#FFF96B6B</color>
+    <!-- ListView colors -->
+    <color name="listViewColor1">#1c313a</color>
+    <color name="listViewColor2">#102027</color>
+    <color name="budgetBackgroundColor">#102027</color>
+</resources>

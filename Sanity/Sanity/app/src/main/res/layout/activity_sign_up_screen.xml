@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorPrimary">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <!-- Email Label -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_signup_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColorHint="@color/colorTextLight">
+        <EditText android:id="@+id/username_edit_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLength="@string/input_length"
+            android:inputType="textEmailAddress"
+            android:hint="@string/sign_up_email_label"
+            android:textColor="@color/colorTextLight"
+            android:backgroundTint="@color/colorTextLight"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Username Label -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_signup_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColorHint="@color/colorTextLight">
+            <EditText android:id="@+id/username_edit_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="@string/input_length"
+                android:inputType="text"
+                android:hint="@string/sign_up_username_label"
+                android:textColor="@color/colorTextLight"
+                android:backgroundTint="@color/colorTextLight"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_signup_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColorHint="@color/colorTextLight">
+            <EditText android:id="@+id/password_edit_signup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="@string/input_length"
+                android:inputType="textPassword"
+                android:hint="@string/sign_up_password_label"
+                android:textColor="@color/colorTextLight"
+                android:backgroundTint="@color/colorTextLight"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Repeat Password Label -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_reenter_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColorHint="@color/colorTextLight">
+            <EditText android:id="@+id/reeneter_password_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="@string/input_length"
+                android:inputType="textPassword"
+                android:hint="@string/sign_up_reenter_password"
+                android:textColor="@color/colorTextLight"
+                android:backgroundTint="@color/colorTextLight"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Security Question Picker -->
+        <TextView
+        android:id="@+id/pick_question"
+        android:text="@string/sign_up_pick_question_label"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+            android:textColor="@color/colorTextLight"/>
+        <Spinner
+        android:id="@+id/question_spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:entries="@array/questions"
+        android:layout_below="@id/pick_question"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="16dp"
+        android:popupBackground="@color/colorPrimaryLight">
+
+        </Spinner>
+
+        <!-- Security Answer Label -->
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/til_security_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"
+            android:textColorHint="@color/colorTextLight">
+            <EditText android:id="@+id/enter_security_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLength="@string/input_length"
+                android:inputType="textPassword"
+                android:hint="@string/sign_up_enter_answer_label"
+                android:textColor="@color/colorTextLight"
+                android:backgroundTint="@color/colorTextLight"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <!-- Sign Up Button -->
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/finish_signup_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="0dp"
+            android:padding="12dp"
+            android:text="@string/sign_up_create_label"
+            android:textColor="@color/colorTextLight"
+            android:background="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome to Sanity!"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/row_padding_size"
+            android:layout_marginBottom="@dimen/row_padding_size"
+            android:layout_gravity="center_horizontal"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/row_padding_size"
+            android:paddingRight="@dimen/row_padding_size"
+            android:textSize="20sp"
+            android:text="To delete a budget, category, or reminder, press and hold it and click delete."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/row_padding_size"
+            android:layout_marginBottom="@dimen/row_padding_size"
+            android:background="@color/colorTextLight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/row_padding_size"
+            android:paddingRight="@dimen/row_padding_size"
+            android:textSize="20sp"
+            android:text="Click on the plus button to add a budget or add a category."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/row_padding_size"
+            android:layout_marginBottom="@dimen/row_padding_size"
+            android:background="@color/colorTextLight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/row_padding_size"
+            android:paddingRight="@dimen/row_padding_size"
+            android:textSize="20sp"
+            android:text="Click on the plus button with the dollar sign to add a transaction."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/row_padding_size"
+            android:layout_marginBottom="@dimen/row_padding_size"
+            android:background="@color/colorTextLight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/row_padding_size"
+            android:paddingRight="@dimen/row_padding_size"
+            android:textSize="20sp"
+            android:text="Click on the calendar button to go to the reminder screen."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/row_padding_size"
+            android:layout_marginBottom="@dimen/row_padding_size"
+            android:background="@color/colorTextLight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/row_padding_size"
+            android:paddingRight="@dimen/row_padding_size"
+            android:textSize="20sp"
+            android:text="Click on a budget to see all the categories in the budget."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/row_padding_size"
+            android:layout_marginBottom="@dimen/row_padding_size"
+            android:background="@color/colorTextLight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/row_padding_size"
+            android:paddingRight="@dimen/row_padding_size"
+            android:textSize="20sp"
+            android:text="Click on a cateory to see all the transactions in that category."/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="@dimen/row_padding_size"
+            android:layout_marginBottom="@dimen/row_padding_size"
+            android:background="@color/colorTextLight"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/row_padding_size"
+            android:paddingRight="@dimen/row_padding_size"
+            android:textSize="20sp"
+            android:text="In the analytics screen, click on a category in the pie chart to see the specific graph for that chart. You can also click on the button and select a different category period to view."/>
+
+    </LinearLayout>
+</ScrollView>

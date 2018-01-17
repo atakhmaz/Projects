@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="basil.sanity">
+
+    <application
+        android:name=".Controllers.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- first activity goes here -->
+        <activity
+            android:name=".Screens.SplashScreen"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name=".Controllers.AlarmReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </receiver>
+
+        <!-- other activities here -->
+        <activity
+            android:name=".Screens.BudgetMenuScreen"
+            android:theme="@style/MyStyle" />
+        <activity
+            android:name=".Screens.LoginScreen"
+            android:theme="@style/MyStyle" />
+        <activity
+            android:name=".Screens.SettingsScreen"
+            android:theme="@style/MyStyle" />
+        <activity
+            android:name=".Screens.AnalyticsScreen"
+            android:theme="@style/MyStyle" />
+        <activity
+            android:name=".Screens.SignUpScreen"
+            android:theme="@style/MyStyle" />
+        <activity
+            android:name=".Screens.TransactionsScreen"
+            android:theme="@style/MyStyle" />
+        <activity
+            android:name=".Screens.ResetScreen"
+            android:theme="@style/MyStyle" />
+        <activity
+            android:name=".Screens.MainMenuScreen"
+            android:theme="@style/MyStyle" />
+        <activity
+            android:name=".Screens.ReminderAddScreen"
+            android:theme="@style/MyStyle" />
+        <activity
+            android:name=".Screens.HelpScreen"
+            android:theme="@style/MyStyle" />
+        <activity
+            android:name=".Screens.ReminderMenuScreen"
+            android:theme="@style/MyStyle" />
+        <activity
+            android:name=".Screens.SearchScreen"
+            android:theme="@style/MyStyle" />
+    </application>
+
+</manifest>

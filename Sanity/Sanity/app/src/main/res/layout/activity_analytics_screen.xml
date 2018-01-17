@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="basil.sanity.Screens.AnalyticsScreen"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary">
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp">
+        <Button
+            android:id="@+id/analytics_period_button"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:text="@string/select_period_label"
+            android:textColor="@color/colorTextLight"
+            android:background="@color/colorPrimaryDark"
+            android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:layout_marginBottom="4dp"/>
+
+</LinearLayout>

@@ -1,0 +1,61 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/budget_row"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="@dimen/row_padding_size"
+    android:paddingRight="@dimen/row_padding_size"
+    android:minHeight="?android:listPreferredItemHeight"
+    android:gravity="center_vertical"
+    android:clickable="true">
+
+    <!--
+        This TextView holds the name of the specicategorydget
+    -->
+    <TextView android:id="@android:id/text1"
+        android:duplicateParentState="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="8dp"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/colorTextLight"
+        android:text="@string/placeholder"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="35dp"
+        android:paddingBottom="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingRight="4dp" >
+            <!--
+                This ProgressBar holds the bar that shows the progress of the specicategorydget
+            -->
+            <ProgressBar
+                android:id="@+id/budget_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+                android:max="100"
+                />
+            <TextView
+                android:id="@+id/myTextProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:maxWidth="@dimen/popup_window_max_width"
+                android:background="@android:color/transparent"
+                android:text="@string/placeholder">
+            </TextView>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>
